@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg fixed-top nav-down" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <div class="navbar-header">
+                <a class="navbar-brand" [routerLink]="['/sections']" fragment="headers"> scarlet • x
+                    <img class="left-first-person add-animation" src=".\assets\img\Profile\icon1.jpg" alt="" />
+                </a>
+            </div>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="https://timcreative.github.io/paper-kit-pro-angular/documentation/tutorial">Documentation</a>
+                </li> -->
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle> HOME </div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="headers">
+                            <i class="nc-icon nc-tile-56"></i>&nbsp; BEST</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="blogs">
+                            <i class="nc-icon nc-bullet-list-67"></i>&nbsp; LATEST POST</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="projects">
+                            <i class="nc-icon nc-calendar-60"></i>&nbsp; STORY</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="testimonials">
+                            <i class="nc-icon nc-badge"></i>&nbsp; Testimonials</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="contact-us">
+                            <i class="nc-icon nc-mobile"></i>&nbsp; Contacts</a>
+                    </div>
+                </div>
+                <!-- <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>HEY</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/examples/aboutus']">
+                            <i class="nc-icon nc-bank"></i>&nbsp; About Us</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/blogpost']">
+                            <i class="nc-icon nc-badge"></i>&nbsp; Blog Post</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/landing']">
+                            <i class="nc-icon nc-spaceship"></i>&nbsp; Landing</a>
+                    </div>
+                </div> -->
+            </ul>
+        </div>
+    </div>
+</nav>
